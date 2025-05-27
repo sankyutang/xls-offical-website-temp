@@ -34,8 +34,10 @@ COPY --from=builder /app/tsconfig.json ./
 # 设置环境变量
 ENV NODE_ENV=production
 
-# 暴露3300端口
+# 暴露3300和80端口
 EXPOSE 3300
+EXPOSE 80
 
-# 启动Next.js应用
-CMD ["yarn", "start", "-p", "3300"] 
+# 启动Next.js应用，监听80端口（主入口），兼容3300
+CMD ["yarn", "start", "-p", "80"]
+# 如需监听3300端口，可将CMD改为["yarn", "start", "-p", "3300"] 
