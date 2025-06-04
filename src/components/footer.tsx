@@ -9,7 +9,7 @@ export default function Footer() {
             <h4 className="font-medium mb-4 text-sm dark:text-gray-50">
               Copyright © {new Date().getFullYear()} 旅神文化. All rights reserved.
             </h4>
-            <div>旅神文化传媒有限公司 版权所有</div>
+            <div>广州旅神文化传媒有限公司 版权所有</div>
             <IwsLink href={"https://beian.miit.gov.cn/"}>粤ICP备19070300号-3</IwsLink>
             {/* <a
               className="text-gray-500 text-sm block mb-2 hover:text-gray-600 transition-colors duration-200"
